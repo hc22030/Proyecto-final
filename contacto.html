@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - HR Innovate Consulting</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./recursos/css/style.css">
+    <link rel="stylesheet" href="./recursos/css/estilos-contacto.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b7604dea1a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href="./index.html"><img src="./recursos/imagenes/LogoHR2.png" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./Equipo.html">Equipo</a></li>
+                    <li><a href="./sucursales.html">Sucursales</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./Servicios.html">Servicios</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="space"></div>
+        <div class="contenedor font-custom">
+            <h1>Contáctanos</h1>
+            <div class="contenido">
+                <div class="info">
+                    <div class="col">
+                        <p><b>Horarios de atención:</b></p>
+                    </div>
+                    <div class="col">
+                        <p><b>Lunes a viernes:</b> 8:00AM - 5:00PM</p>
+                    </div>
+                    <div class="col">
+                        <p><b>Sábado y Domingo:</b> 8:00AM - 4:00PM</p>
+                    </div>
+                    <div class="col">
+                        <i class="icono fas fa-map-marker-alt"></i>
+                        <p><b>Ubicaciones:</b> Metrocentro San Salvador, Galerias, La Gran Via y Cascadas.</p>
+                    </div>
+                    <div class="col">
+                        <i class="icono fas fa-envelope"></i>
+                        <p><b>Correo electrónico:</b> eher3766@gmail.com</p>
+                    </div>
+                    <div class="col">
+                        <i class="icono fas fa-phone"></i>
+                        <p><b>Teléfono:</b> 6437 8562</p>
+                    </div>
+                    <div class="redes-s">
+                        <a href="https://www.facebook.com/UESoficial.SV?mibextid=ZbWKwL"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/uesoficial/?igsh=eGNjYmd3a2plMjFr"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/50372396355"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form action="" method="GET" class="formulario">
+                    <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                    <input type="text" name="correo" placeholder="Correo electrónico" id="correo">
+                    <input type="text" name="asunto" placeholder="Asunto" id="asunto">
+                    <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                    <script src="script.js"></script>
+                    <button type="button" onclick="Enviar()">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./Equipo.html">Equipo</a></li>
+                        <li><a href="./sucursales.html">Sucursales</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./Servicios.html">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Redes sociales</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/UESoficial.SV?mibextid=ZbWKwL"><i
+                                    class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/uesoficial/?igsh=eGNjYmd3a2plMjFr"><i
+                                    class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://wa.me/50372396355"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "wQVVxJO2g1uMNTEyn",
+            });
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+.sau {
+    padding: 30px;
+    background: url(./../imagenes/Azul.jpg);
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.box-container .box {
+    min-width: 300px;
+    background: #ffffff;
+    text-align: center; 
+    padding: 20px;
+    border-radius: 25px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;  
+}
+
+.box-container .box > p {
+    margin-top: 12px;
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 100%;
+    color: #fff;
+    background: #a54f46;
+    font-size: 2rem;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #000000;
+}
+
+.tituloo {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.map {
+    background-color: #fff;
+    text-align: center;
+}
+
+.titulooo {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+.color {
+    background: #f8f1ec;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .footer-links {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer .footer-links h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    display: inline-block;
+}
+
+.footer .footer-links ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.footer .footer-links ul li {
+    margin-bottom: 15px;
+}
+
+.footer .footer-links ul li a {
+    display: inline-block;
+    color: #bbbbbb;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer .footer-links ul li a:hover {
+    color: #ffffff;
+}
+
+.footer .social-icons {
+    margin-top: 20px;
+}
+
+.footer .social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .social-icons li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer .social-icons li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Media queries para móviles y tabletas */
+@media (max-width: 768px) {
+    .sau {
+        padding: 30px;
+        background: url(./../imagenes/Azul.jpg);
+    }
+
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-container .box {
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .tituloo,
+    .titulooo {
+        font-size: 25px;
+    }
+
+    .footer .footer-links {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+/* Media query para tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sau {
+        padding: 30px;
+        background: url(./../imagenes/Azul.jpg);
+    }
+
+    .box-container {
+        justify-content: center;
+    }
+
+    .box-container .box {
+        min-width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .tituloo,
+    .titulooo {
+        font-size: 28px;
+    }
+
+    .footer .footer-links {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}

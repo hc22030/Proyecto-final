@@ -1,0 +1,237 @@
+/* Estilos base */
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background: #265ca3;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+.contenedor h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenido .info,
+.contenido .formulario {
+    width: 50%;
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+.info {
+    padding-left: 10px;
+}
+
+.info .col {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.info .col .icono {
+    color: #000000;
+    margin-right: 10px;
+}
+
+.info .col p {
+    color: #000;
+}
+
+.info .redes-s {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.info .redes-s a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: #130b0c;
+    color: #fff;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .4);
+}
+
+.info .redes-s a:hover {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .4);
+}
+
+.formulario {
+    padding-left: 10px;
+}
+
+.formulario input[type='text'],
+.formulario textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    color: #999;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: 400;
+    outline: 0;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+
+.formulario textarea {
+    min-height: 150px;
+    max-height: 200px;
+}
+
+.formulario input[type='text']:focus,
+.formulario textarea:focus {
+    border: 1px solid #130b0c;
+}
+
+.formulario button {
+    padding: 12px 30px;
+    border: transparent;
+    background: #130b0c;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    border-radius: 25px;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .footer-links {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer .footer-links h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    display: inline-block;
+}
+
+.footer .footer-links ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.footer .footer-links ul li {
+    margin-bottom: 15px;
+}
+
+.footer .footer-links ul li a {
+    display: inline-block;
+    color: #bbbbbb;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer .footer-links ul li a:hover {
+    color: #ffffff;
+}
+
+.footer .social-icons {
+    margin-top: 20px;
+}
+
+.footer .social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .social-icons li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer .social-icons li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Media queries para móviles y tabletas */
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 30px;
+    }
+
+    .contenido .info,
+    .contenido .formulario {
+        width: 100%;
+        padding: 0;
+    }
+
+    .info {
+        margin-bottom: 30px;
+    }
+
+    .footer .footer-links {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+/* Media query para tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenedor {
+        padding: 30px;
+    }
+
+    .contenido .info,
+    .contenido .formulario {
+        width: 100%;
+        padding: 0;
+    }
+
+    .info {
+        margin-bottom: 30px;
+    }
+
+    .footer .footer-links {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
